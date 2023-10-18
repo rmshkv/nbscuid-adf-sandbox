@@ -7,7 +7,7 @@
 
    > **_NOTE:_**  ADF is currently set up as a submodule of this repo, inside `nbscuid-adf-sandbox/nblibrary/ADF`. For things to work out of the box, you need to either clone [ADF](https://github.com/NCAR/ADF) into this folder, or go into `config.yml` and change the parameter `adf_path:` to where you have ADF installed.
 5. Navigate to the top-level folder, `nbscuid-adf-sandbox`
-6. Install the environment specified by mom6-environment.yml: `mamba env create -f mom6-environment.yml`, or if you don't have `mamba` installed, `conda env create -f mom6-environment.yml`. (It'll probably be a lot faster with `mamba`!) 
+6. Install the environment specified by `mom6-environment.yml`: `mamba env create -f mom6-environment.yml`, or if you don't have `mamba` installed, `conda env create -f mom6-environment.yml`. (It'll probably be a lot faster with `mamba`!) 
 
     > **_NOTE:_**  This will create an environment called `mom6-tools-nbscuid`. There's no need to activate it--it'll just be used when `nbscuid` runs the `surface` notebook, since it has `mom6-tools-nbscuid` specified as its `kernel_name` in `config.yml`. 
     
