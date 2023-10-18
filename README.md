@@ -9,7 +9,7 @@
 5. Navigate to the top-level folder, `nbscuid-adf-sandbox`
 6. Install the environment specified by mom6-environment.yml: `mamba env create -f mom6-environment.yml`, or if you don't have `mamba` installed, `conda env create -f mom6-environment.yml`. (It'll probably be a lot faster with `mamba`!) 
 
-    > **_NOTE:_**This will create an environment called `mom6-tools-nbscuid`. There's no need to activate it--it'll just be used when `nbscuid` runs the `surface` notebook, since it has `mom6-tools-nbscuid` specified as its `kernel_name` in `config.yml`. 
+    > **_NOTE:_**  This will create an environment called `mom6-tools-nbscuid`. There's no need to activate it--it'll just be used when `nbscuid` runs the `surface` notebook, since it has `mom6-tools-nbscuid` specified as its `kernel_name` in `config.yml`. 
     
 7. Run `nbscuid-run config.yml`, making sure you're still in an environment with `nbscuid` installed
 
