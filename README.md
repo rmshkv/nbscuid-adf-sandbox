@@ -2,14 +2,15 @@
 # How to run
 1. Install an environment that contains [`nbscuid`](https://github.com/rmshkv/nbscuid), e.g. with the instructions [here](https://nbscuid.readthedocs.io/en/latest/howtosetupdevelopment.html#how-to-set-up-an-nbscuid-development-environment)
 2. Activate this environment (e.g. `conda activate nbscuid-dev`)
-3. Clone this repo
+3. Clone this repo, which must be done recursively in order to clone the associated submodules:
 
-   > **_NOTE:_**  ADF is currently set up as a submodule of this repo, inside `nbscuid-adf-sandbox/nblibrary/ADF`. For things to work out of the box, you need to either clone [ADF](https://github.com/NCAR/ADF) into this folder, or go into `config.yml` and change the parameter `adf_path:` to where you have ADF installed.
-5. Navigate to the top-level folder, `nbscuid-adf-sandbox`
-6. Run `nbscuid-run config.yml`
+`git clone --recurse-submodules https://github.com/rmshkv/nbscuid-adf-sandbox.git`
+
+4. Navigate to the top-level folder, `nbscuid-adf-sandbox`
+5. Run `nbscuid-run config.yml`
 
     > **_NOTE:_**  You can actually run this command from anywhere, just change `config.yml` to the full path relative to your location.
-7. Run `nbscuid-build config.yml`
+6. Run `nbscuid-build config.yml`
 
    > **_NOTE:_**  The built Jupyter Book files will appear in `computed_notebooks/adf-quick-run/_build`, try opening `index.html`!
 
