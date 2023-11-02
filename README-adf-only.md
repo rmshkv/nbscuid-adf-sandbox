@@ -7,12 +7,12 @@
 `git clone --recurse-submodules https://github.com/rmshkv/nbscuid-adf-sandbox.git`
 
 4. Navigate to the top-level folder, `nbscuid-adf-sandbox`
-5. Run `nbscuid-run config.yml`
+5. Run `nbscuid-run config-adf-only.yml`
 
     > **_NOTE:_**  You can actually run this command from anywhere, just change `config.yml` to the full path relative to your location.
-6. Run `nbscuid-build config.yml`
+6. Run `nbscuid-build config-adf-only.yml`
 
    > **_NOTE:_**  The built Jupyter Book files will appear in `computed_notebooks/adf-quick-run/_build`, try opening `index.html`!
 
 # How to add stuff
-Check out the `config.yml` file. [This page](https://nbscuid.readthedocs.io/en/latest/addingnotebookstocollection.html) has some instructions for how to add new notebooks and their parameters, and [this](https://github.com/rmshkv/nbscuid-examples/blob/main/testing-simplifying-features/config.yml) is an example of a config.yml file that uses some more options, including adding scripts.
+Check out the `config-adf-only.yml` file. [This page](https://nbscuid.readthedocs.io/en/latest/addingnotebookstocollection.html) has some instructions for how to add new notebooks and their parameters, and [this](https://github.com/rmshkv/nbscuid-examples/blob/main/testing-simplifying-features/config.yml) is an example of a config.yml file that uses some more options, including adding scripts.
