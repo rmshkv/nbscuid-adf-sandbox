@@ -1,14 +1,14 @@
 # case info
 Case:
-  CASEROOT: /glade/work/gmarques/cesm.cases/G/g.e23_b15.GJRAv4.TL319_t232_zstar_N65.baseline.001/
-  CIMEROOT: /glade/work/gmarques/cesm.sandboxes/cesm2_3_beta15/cime/
+  CASEROOT: /glade/p/cesmdata/cseg/runs/cesm2_0/b.e23_alpha16b.BLT1850.ne30_t232.054/
+  CIMEROOT: /glade/work/hannay/cesm_tags/cesm2_3_alpha16g/cime/
   OCN_DIAG_ROOT: ncfiles/
-  SNAME: ctrl_jra_beta15
+  SNAME: diagtestcase
 
 # start and end dates to perform averages
 Avg:
-  end_date: '0062-01-01'
-  start_date: '0031-01-01'
+  end_date: '0101-01-01'
+  start_date: '0091-01-01'
 
 # cesm hist fname conventions
 Fnames:
